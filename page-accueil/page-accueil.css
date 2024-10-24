@@ -1,6 +1,218 @@
-*[class], ::before, ::after
+body
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.header {
+    background-image: url(../immobilier/assets/images/header/headerbg.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    color: white;
+}
+
+.header a {
+    color: black;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    color: white;
+}
+
+.header-building {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-header-building {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header-building img{
+    width: 100px;
+    height: 100px;
+}
+
+.header-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-house-hand img {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: -130px;
+}
+
+.text-header-building a {
+    color: #fcf5fe;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-header-building a:nth-child(2) {
+    color: #abd543;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.detail-pourcentage {
+    position: relative;
+    top: -70px;
+}
+
+.detail-pourcentage , .detail-honoraires, .btn-savoir{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    align-items: center;
+}
+
+.header-contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.espace-client {
+    border: 2px solid #baa9bc;
+    padding: 5px 15px;
+    background-color: #36183a;
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: -40px;
+}
+
+.espace-client a {
+    color: #faf8fb;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.header-reseaux {
+    border: 1px solid #8b934f;
+    display: flex;
+    flex-direction: row;
+    margin-top: -54px;
+}
+
+.facebook , .google, .twitter {
+    padding: 5px;
+    height: 45px;
+}
+
+.facebook i, .google i, .twitter i {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.google {
+    background-color: #a4cf37;
+}
+
+.facebook {
+    background-color: #95bf2d;
+}
+
+.twitter {
+    background-color: #87a92e;
+}
+
+.detail-pourcentage a {
+    font-size: 25px;
+    color: #ad67bd;
+    text-decoration: none;
+}
+
+.detail-pourcentage span:nth-child(1){
+    font-size: 60px;
+}
+
+.detail-pourcentage span:nth-child(2){
+    font-size: 30px;
+    position: relative;
+    top: -27px;
+    left: -7px;
+}
+
+.detail-pourcentage span:nth-child(3) {
+    font-size: 20px;
+    position: relative;
+    left: -30px;
+}
+
+.detail-pourcentage span:nth-child(4) {
+    font-size: 20px;
+    position: relative;
+    left: -10px;
+    top: -27px;
+    line-height: 1px;
+    font-weight: bold;
+}
+
+.detail-pourcentage span:nth-child(5) {
+    font-size: 20px;
+    position: relative;
+    left: -175px;
+    line-height: 1px;
+    font-weight: bold;
+}
+
+
+.detail-honoraires {
+    font-size: 10px;
+    line-height: 1px;
+}
+
+.btn-savoir {
+    background-color: #a4cf37;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-savoir:hover {
+    background-color: #87a92e;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -102px;
+    color: white;
+    padding: 20px 40px;
+    width: 80%;
+    margin-left: 5%;
+    background-color: #34193c;
+}
+
+.header-bottom a {
+    color: #afa2b3;
+    text-decoration: none;
+}
+
+.header-bottom a:hover {
+    text-decoration: underline;
 }

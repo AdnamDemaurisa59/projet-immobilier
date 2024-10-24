@@ -29,8 +29,8 @@ setTimeout(function() {
     history.pushState({page: 1}, '', window.location.href);
 
     // Redirige vers la page principale
-    window.location.href = "./page-accueil/page-accueil.html";
-}, 3000); 
+    window.location.href = "";
+}, 9000); 
 
 // Pour éviter le bug de l'animation "Loader" qui s'effectue à l'infini lors du retour en arrière sur Safari
 window.onpageshow = function(event) {
