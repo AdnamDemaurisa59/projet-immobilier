@@ -5,6 +5,7 @@ body
     box-sizing: border-box;
 }
 
+/* Code CSS pour le Header */
 .header {
     background-image: url(../immobilier/assets/images/header/headerbg.jpg);
     background-size: cover;
@@ -216,3 +217,81 @@ body
 .header-bottom a:hover {
     text-decoration: underline;
 }
+
+
+/* Code CSS pour la Section First-Section "Qui Sommes nous ?"  */
+
+
+.first-section {
+    margin-top: 90px;
+}
+.title, .description-entreprise {
+    text-align: center;
+} 
+
+.title {
+    font-size: 20px;
+    color: #38263d;
+    font-weight: bold;
+}
+
+
+.description-entreprise {
+    font-size: 15px;
+    color: #5e4d62;
+    line-height: 1px;
+}
+
+.description-entreprise span {
+    color: #5e4d62;
+    font-weight: bold;
+}
+
+.icon-plus {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.icon-plus a {
+    color: #2d1731;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.icon-plus i {
+    color: #a4cf37;
+    font-size: 25px;
+    background-color: #36183a;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.icon-plus i:hover {
+    background-color: #34193c;
+}
+
+.btn-infos-prestations  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-infos-prestations a {
+    background-color:#a4cf37;
+    border: 1px solid #a4cf37;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-infos-prestations a:hover {
+    background-color: #87a92e;
+}
+
