@@ -295,3 +295,83 @@ body
     background-color: #87a92e;
 }
 
+
+/* Code CSS pour la Section "Nos Services En Ligne"  */
+
+.service-online {
+    margin-top: 50px;
+    padding: 20px 40px;
+    height: 450px;
+    width: 70%;
+    margin-left: 10%;
+    background-image: url(../immobilier/assets/images/header/headerbg.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.title-service-online h3{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.group-online {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.group-online a {
+    color: #a76dbd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+.diagnostics, .rendez-vous, .simulateurs, .partenariat {
+    padding: 10px;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.group-online p {
+    text-align: center;
+    font-size: 15px;
+    color: #a76dbd;
+}
+
+.group-online i{
+    color: #a76dbd;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 35%;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+
+.group-online button {
+    width: 160px;
+    height: 50px;
+    background-color: #a962be;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
