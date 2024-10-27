@@ -239,7 +239,6 @@ body
 .description-entreprise {
     font-size: 15px;
     color: #5e4d62;
-    line-height: 1px;
 }
 
 .description-entreprise span {
@@ -247,30 +246,39 @@ body
     font-weight: bold;
 }
 
-.icon-plus {
+.group-first-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-whoarewe {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
-.icon-plus a {
+.group-first-section a {
     color: #2d1731;
     font-size: 15px;
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.icon-plus i {
+.icon-whoarewe i {
     color: #a4cf37;
     font-size: 25px;
     background-color: #36183a;
     border-radius: 50%;
     padding: 10px;
+    margin-top: 15px;
 }
 
-.icon-plus i:hover {
-    background-color: #34193c;
+.reduced-agency-fees , .quality-service , .targeted-visits , .short-deadlines {
+    margin-top: 10px;
 }
 
 .btn-infos-prestations  {
@@ -302,12 +310,12 @@ body
     margin-top: 50px;
     padding: 20px 40px;
     height: 450px;
-    width: 70%;
-    margin-left: 10%;
+    width: 80%;
+    margin-left: 5%;
     background-image: url(../immobilier/assets/images/header/headerbg.jpg);
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
 
@@ -322,16 +330,20 @@ body
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    align-items: center;
 }
 
-.group-online a {
-    color: #a76dbd;
+.title-group-online {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.title-group-online a {
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
-    text-align: center;
     font-size: 15px;
+    color: #a76dbd;
+    margin-bottom: 50px;
 }
 
 
@@ -343,35 +355,154 @@ body
     border-radius: 10px;
     background-color: white;
     margin: 10px;
-    transition: background-color 0.3s ease;
 }
 
-.group-online p {
+
+.para-group-online p {
     text-align: center;
     font-size: 15px;
     color: #a76dbd;
 }
 
-.group-online i{
+.icon-group-online i {
     color: #a76dbd;
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 35%;
     transition: color 0.3s ease;
-    text-align: center;
+    text-align: center; 
 }
 
-
-.group-online button {
+.btn-group-online button{
     width: 160px;
-    height: 50px;
+    height: 40px;
     background-color: #a962be;
     color: white;
     font-size: 15px;
     border: none;
     cursor: pointer;
+    text-align: center; 
+}
+
+.btn-group-online  {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn-group-online button:hover {
+    background-color: #924d9b;
+}
+
+.group-online button:nth-child(1) {
+    position: relative;
+}
+
+/*  Code CSS partie "QUE RECHERCHEZ-VOUS ? " */
+
+.searchyou-section{
+    background-color: #e9e7ea;
+    padding: 20px 20px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.title-searchyou h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #38263d;
+    font-weight: bold;
+}
+
+.searchyou-group {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.bien, .localisation, .budget {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #55425b;
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+select {
+    border-radius: 5px;
+    background-color: #e9e8ed;
+}
+
+.searchyou-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 80px;
+}
+
+.searchyou-btn button{
+   width: 200px;
+    height: 40px;
+    background-color: #a6cf37;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.searchyou-btn button:hover {
+    background-color: #87a92e;
+}
+
+.devise1 {
+    position: relative;
+    left: -20px
+}
+
+.devise2 {
+    position: relative;
+    left: -20px
+}
+
+
+
+/* Code CSS pour le FOOTER  */
+
+footer div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-bottom div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+    padding: 20px 40px;
+    width: 75%;
+    background-color: #34193c;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom1 p {
+    font-size: 15px;
+    color: #5e4d62;
+    text-align: center;
 }
