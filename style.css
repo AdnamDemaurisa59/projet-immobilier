@@ -8,16 +8,20 @@ body
 .loader {
     width : 100%;
     height: 100vh;
-    background-color: white;
+    background-color: #e9e7ea;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .turn img {
+    border: none;
     width: 250px;
     height: 250px;
+    border: -20px solid #e9e7ea;
+    border-radius: 50%;
     animation: turn 1s infinite linear;
+    color: #e9e7ea;
 }
 
 @keyframes turn {

@@ -112,6 +112,10 @@ body
     margin-top: -54px;
 }
 
+.header-reseaux a {
+    text-decoration: none;
+}
+
 .facebook , .google, .twitter {
     padding: 5px;
     height: 45px;
@@ -131,8 +135,27 @@ body
     background-color: #95bf2d;
 }
 
+.facebook i {
+    color: #fff; 
+    background-color: #95bf2d;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s; /* Transition douce */
+}
+
+.facebook i:hover {
+    color: #0C64F6;
+    background-color: #fff; 
+    transform: scale(1.3);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
 .twitter {
     background-color: #87a92e;
+}
+
+.twitter i:hover {
+    color: #39A2F3;
 }
 
 .detail-pourcentage a {
@@ -175,7 +198,6 @@ body
     font-weight: bold;
 }
 
-
 .detail-honoraires {
     font-size: 10px;
     line-height: 1px;
@@ -210,17 +232,18 @@ body
 }
 
 .header-bottom a {
-    color: #afa2b3;
+    color: white;
     text-decoration: none;
 }
 
 .header-bottom a:hover {
     text-decoration: underline;
+    background-color: #9346A8;
+    padding: 20px;
 }
 
 
 /* Code CSS pour la Section First-Section "Qui Sommes nous ?"  */
-
 
 .first-section {
     margin-top: 90px;
@@ -234,7 +257,6 @@ body
     color: #38263d;
     font-weight: bold;
 }
-
 
 .description-entreprise {
     font-size: 15px;
@@ -346,8 +368,6 @@ body
     margin-bottom: 50px;
 }
 
-
-
 .diagnostics, .rendez-vous, .simulateurs, .partenariat {
     padding: 10px;
     width: 250px;
@@ -356,7 +376,6 @@ body
     background-color: white;
     margin: 10px;
 }
-
 
 .para-group-online p {
     text-align: center;
@@ -396,8 +415,24 @@ body
     background-color: #924d9b;
 }
 
-.group-online button:nth-child(1) {
+.diagnostics button {
     position: relative;
+    top: 38px;
+}
+
+.rendez-vous button {
+    position: relative;
+    top: 20px;
+}
+
+.simulateurs button {
+    position: relative;
+    top: 3px;
+}
+
+.partenariat button {
+    position: relative;
+    top: 20px;
 }
 
 /*  Code CSS partie "QUE RECHERCHEZ-VOUS ? " */
@@ -474,6 +509,157 @@ select {
 
 
 
+/* Code CSS pour la Section "DERNIERS BIEN MIS EN LIGNE "  */
+
+.title-proporties h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #38263d;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.group-city {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.group-city a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #a76dbd;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    border: 2px solid black;
+}
+
+.image-container img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-position: center;
+    border: 2px solid black;
+}
+
+.position-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-latest-proporties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.btn-latest-proporties button{
+    width: 200px;
+    height: 40px;
+    background-color: #a6cf37;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-latest-proporties button:hover {
+    background-color: #87a92e;
+}
+
+/* Code CSS pour la section "CONTACTEZ-NOUS"  */
+
+.contact-group {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    background-color: #e9e7ea;
+
+}
+
+.title-contact-group h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #38263d;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.group-form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.civilite, .name, .firstname, .email, .tel, .date {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 30px;
+
+}
+
+.message p {
+    color: #55425b;
+    font-size: 20px;
+    position: relative;
+    top: -18px;
+}
+
+textarea {
+    resize: none;
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #a76dbd;
+}
+
+.btn-envoyer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn-envoyer-form button{
+    width: 120px;
+    height: 40px;
+    background-color: #a6cf37;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-envoyer-form button:hover {
+    background-color: #87a92e;
+}
+
 /* Code CSS pour le FOOTER  */
 
 footer div{
@@ -506,3 +692,43 @@ footer div{
     color: #5e4d62;
     text-align: center;
 }
+
+.footer-bottom1 p:hover {
+    text-transform: uppercase;
+    transition: text-transform 0.5s ease;
+    color: #34193c;
+    transition: color 0.5s ease;
+    
+}
+
+
+/* Code CSS pour les icons Twitter et Github  */
+
+.icon-socialmedia {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.icon-socialmedia a {
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.icon-socialmedia i {
+    font-size: 45px;
+}
+
+.icon-socialmedia a:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s ease;
+}
+
+
+.icon-linkedin i {
+    font-size: 45px;
+    color: #1766C2;
+}
+

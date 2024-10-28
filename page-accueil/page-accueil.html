@@ -30,7 +30,7 @@
                             <a href="https://www.google.fr/" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a> 
                         </div>
                        <div class="facebook">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
                        </div>
                         <div class="twitter">
                             <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a> 
@@ -52,17 +52,27 @@
                 </div>
             </div>
             <div class="header-bottom">
-                <a href="">QUI SOMMES NOUS ?</a>
-                <a href="">NOS SERVICES</a>
-                <a href="">RECHERCHER UN BIEN</a>
-                <a href="">NOS DERNIERES OFFRES</a>
-                <a href="">NOUS CONTACTER</a>
+                <div>
+                    <a href="#first-section">QUI SOMMES NOUS ?</a>
+                </div>
+                <div>
+                    <a href="#service-online">NOS SERVICES</a>
+                </div>
+                <div>
+                    <a href="#searchyou-section">RECHERCHER UN BIEN</a>
+                </div>
+                <div>
+                    <a href="#latest-posted-proporties">NOS DERNIERES OFFRES</a>
+                </div>
+                <div>
+                    <a href="#contact-group">NOUS CONTACTER</a>
+                </div>
             </div>
         </section>
     </header>
 
     <main>
-        <section class="first-section">
+        <section class="first-section" id="first-section">
             <div class="title">
                 <h1>QUI SOMMES NOUS ?</h1>
             </div>
@@ -112,7 +122,7 @@
         </section>
 
         <section>
-            <div class="service-online">
+            <div class="service-online" id="service-online">
                 <div class="title-service-online">
                     <h3>NOS SERVICES EN LIGNES</h3>
                 </div>
@@ -178,7 +188,7 @@
         </section>
 
         <section>
-            <div  class="searchyou-section">
+            <div  class="searchyou-section" id="searchyou-section">
                 <div class="title-searchyou">
                     <h3>QUE RECHERCHEZ-VOUS ?</h3>
                 </div>
@@ -211,7 +221,111 @@
                 </div>
                 
             </div>
+        </section>
 
+        <section class="">
+            <div class="latest-posted-proporties" id="latest-posted-proporties">
+                <div class="title-proporties">
+                    <h3>DERNIERS BIENS MIS EN LIGNES</h3>
+                </div>
+                <!-- Liens de sélection de type de bien -->
+                <div class="group-city">
+                    <div class="appart">
+                        <a href="#" data-type="appart">APPARTEMENTS</a>
+                    </div>
+                    <div class="house">
+                        <a href="#" data-type="house">MAISONS</a>
+                    </div>
+                    <div class="terrains">
+                        <a href="#" data-type="terrain">TERRAINS</a>
+                    </div>
+                </div> 
+                <!-- Conteneur d'images de biens -->
+            <div class="position-image-container">
+                    <div class="image-container">
+                        <!--  Image Appartement-->
+                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart1.jpg" alt="Appartement"></div>
+                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart2.jpg" alt="Appartement"></div>
+                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart3.jpg" alt="Appartement"></div>
+                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart4.jpg" alt="Appartement"></div>
+                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart5.jpg" alt="Appartement"></div>
+                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart6.jpg" alt="Appartement"></div>
+                        <!--  Image Maison-->
+                    <div class="image house"><img src="../immobilier/assets/images/immobilier/house42.webp" alt="Maison"></div>
+                    <div class="image house"><img src="../immobilier/assets/images/immobilier/houseAlone.jpg" alt="Maison"></div>
+                    <div class="image house"><img src="../immobilier/assets/images/immobilier/houseDark.jpg" alt="Maison"></div>
+                    <div class="image house"><img src="../immobilier/assets/images/immobilier/houseHobbit.jpg" alt="Maison"></div>
+                    <div class="image house"><img src="../immobilier/assets/images/immobilier/houseLuxe.jpg" alt="Maison"></div>
+                    <div class="image house"><img src="../immobilier/assets/images/immobilier/houseTardis.jpg" alt="Maison"></div>
+                        <!--  Image Terrain-->
+                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain1.jpg" alt="Terrain"></div>
+                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain2.jpg" alt="Terrain"></div>
+                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain3.jpg" alt="Terrain"></div>
+                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain4.jpg" alt="Terrain"></div>
+                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain5.jpg" alt="Terrain"></div>
+                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain6.jpg" alt="Terrain"></div>
+                    <!-- Ajoute ici d'autres images pour chaque type... -->
+                </div>
+            </div>
+            <div class="btn-latest-proporties">
+                <button>VOIR PLUS DE BIEN</button>
+            </div>
+
+            </div>
+        </section>
+        
+
+        <section>
+            <div class="contact-group" id="contact-group">
+                <div class="title-contact-group">
+                    <h3>CONTACTEZ-NOUS</h3>
+                </div> 
+                <div>
+                    <form action="" method="post">
+                        <div class="group-form">
+                            <div class="civilite">
+                                <label for="civilite">CIVILITE *</label>
+                                <select name="" id="civilite">
+                                    <option value="">Mr.</option>
+                                    <option value="">Mme.</option>
+                                    <option value="">Autre</option>
+                                </select>
+                            </div>
+                            <div class="name">
+                                <label for="name">NOM *</label>
+                                <input type="text" placeholder="Votre nom" id="name" required>
+                            </div>
+                            <div class="firstname">
+                                <label for="firstname">PRENOM *</label>
+                                <input type="text" placeholder="Votre prénom" id="firstname" required>
+                            </div>
+                            <div class="email">
+                                <label for="email">ADRESSE MAIL *</label>
+                                <input type="email" placeholder="Votre email" id="email" required>
+                            </div>
+                            <div class="tel">
+                                <label for="tel">TELEPHONE *</label>
+                                <input type="tel" placeholder="Votre numéro" id="tel" required>
+                            </div>
+                            <div class="date">
+                                <label for="date">DATE DU JOUR *</label>
+                                <input type="date" placeholder="date d'aujourdhui" id="date" required>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <label for="message">MESSAGE</label>
+                            <textarea name="" id="message"  placeholder="Votre message"></textarea>
+                            <p>Champs Obligatoires *</p>
+                        </div>
+                        <div class="btn-envoyer-form">
+                            <button type="submit">ENVOYER</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+          
+            
         </section>
 
     </main>
@@ -219,17 +333,61 @@
     <footer>
         <div class="footer-bottom">
             <div>
-                <a href="">INFORMATIONS LEGALES</a>
-                <a href="">CONTACT</a>
-                <a href="">PLAN DU SITE</a>
-                <a href="">FOIRE AUX QUESTIONS</a>
-                <a href="">MENTIONS LEGALES</a>
+                <a href="#">INFORMATIONS LEGALES</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PLAN DU SITE</a>
+                <a href="#">FOIRE AUX QUESTIONS</a>
+                <a href="#">MENTIONS LEGALES</a>
             </div>
         </div>
         <div class="footer-bottom1">
             <p> &copy;2024 Projet Immobilier. Tous droits réservés.</p>
         </div>
+        <div class="icon-socialmedia">
+            <div class="icon-linkedin">
+                <a href="https://www.linkedin.com/in/adnam-koud-demaurisa-447379194/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="icon-github">
+                <a href="https://github.com/AdnamDemaurisa59/projet-immobilier" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const allImages = document.querySelectorAll('.image-container .image');
+            
+            // Affiche seulement les 6 premières images
+            allImages.forEach((image, index) => {
+                if (index >= 6) {
+                    image.classList.add('hidden');
+                }
+            });
+            
+            // Fonction pour afficher les images selon le type sélectionné
+            function filterImages(type) {
+                allImages.forEach(image => {
+                    image.classList.add('hidden'); 
+                    if (type === 'all' || image.classList.contains(type)) {
+                        image.classList.remove('hidden'); // Affiche les images du type sélectionné
+                    }
+                });
+            }
+        
+            // Écouteurs pour les liens de sélection de type de bien
+            document.querySelectorAll('.group-city a').forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Empêche le rechargement de la page
+                    const type = event.target.getAttribute('data-type');
+                    filterImages(type);
+                });
+            });
+        
+            
+            filterImages('all');
+        });
+        
+    </script>
     
 </body>
 </html>
