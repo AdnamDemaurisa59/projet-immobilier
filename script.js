@@ -29,8 +29,8 @@ setTimeout(function() {
     history.pushState({page: 1}, '', window.location.href);
 
     // Redirige vers la page principale
-    window.location.href = "";
-}, 9000); 
+    window.location.href = "./page-accueil/page-accueil.html";
+}, 2000); 
 
 // Pour éviter le bug de l'animation "Loader" qui s'effectue à l'infini lors du retour en arrière sur Safari
 window.onpageshow = function(event) {
@@ -44,7 +44,7 @@ window.onpageshow = function(event) {
 window.addEventListener('popstate', function(event) {
     console.log('Retour en arrière détecté');
     // Redirection forcée à chaque retour en arrière
-    window.location.href = "./page-accueil/pageaccueil-teastation.html";
+    window.location.href = "./page-accueil/page-accueil.html";
 });
 
 // Bloquer le retour en arrière sur Chrome
