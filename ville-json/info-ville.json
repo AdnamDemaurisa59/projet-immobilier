@@ -1,0 +1,116 @@
+{
+    "appartement": [
+        {
+            "titre":"Appartement avec étage",
+            "ville":"Paris",
+            "prix":450000,
+            "photos":"../immobilier/assets/images/immobilier/appart1.jpg"
+        },
+        {
+            "titre":"Appartement Boisé",
+            "ville":"Marseille",
+            "prix":398000,
+            "photos": "../immobilier/assets/images/immobilier/appart2.jpg"
+        },
+        {
+            "titre":"Appartement Bord de lac",
+            "ville":"Annecy",
+            "prix":684000,
+            "photos":"../immobilier/assets/images/immobilier/appart3.jpg"
+        },
+        {
+            "titre":"Appartement d'artiste",
+            "ville":"Lille",
+            "prix":250000,
+            "photos":"../immobilier/assets/images/immobilier/appart4.jpg"
+        },
+        {
+            "titre":"Appartement luxueux",
+            "ville":"Bordeaux",
+            "prix":325000,
+            "photos":"../immobilier/assets/images/immobilier/appart5.jpg"
+        },
+        {
+            "titre":"Appartement coloré",
+            "ville":"Nantes",
+            "prix":199000,
+            "photos":"../immobilier/assets/images/immobilier/appart6.jpg"
+        }
+    ],
+    "maison": [
+        {
+            "titre":"Plus grande à l'intérieur",
+            "ville":"Gallifrey",
+            "prix":1963000,
+            "photos":"../immobilier/assets/images/immobilier/houseTardis.jpg"
+        },
+        {
+            "titre":"Maison de Campagne",
+            "ville":"Cottington",
+            "prix":197900,
+            "photos":"../immobilier/assets/images/immobilier/house42.webp"
+        },
+        {
+            "titre":"Villa Côtière",
+            "ville":"Innsmouth",
+            "prix":192800,
+            "photos":"../immobilier/assets/images/immobilier/houseAlone.jpg"
+        },
+        {
+            "titre":"Maison pour famille nombreuse",
+            "ville":"Chicago",
+            "prix":1938000,
+            "photos":"../immobilier/assets/images/immobilier/houseDark.jpg"
+        },
+        {
+            "titre":"Maison de campagne",
+            "ville":"Hobbiton",
+            "prix":193700,
+            "photos":"../immobilier/assets/images/immobilier/houseHobbit.jpg"
+        },
+        {
+            "titre":"Luxueuse Villa",
+            "ville":"Paris",
+            "prix":6300000,
+            "photos":"../immobilier/assets/images/immobilier/houseLuxe.jpg"
+        }
+    ],
+    "terrain": [
+        {
+            "titre":"Terrain en centre ville",
+            "ville":"Roubaix",
+            "prix":255000,
+            "photos":"../immobilier/assets/images/immobilier/terrain1.jpg"
+        },
+        {
+            "titre":"Ancien champ de blé",
+            "ville":"Roumoules",
+            "prix":75000,
+            "photos":"../immobilier/assets/images/immobilier/terrain2.jpg"
+        },
+        {
+            "titre":"pré en montagne",
+            "ville":"Riez",
+            "prix":98000,
+            "photos":"../immobilier/assets/images/immobilier/terrain3.jpg"
+        },
+        {
+            "titre":"Terrain avec arbre",
+            "ville":"Montcuq",
+            "prix":120000,
+            "photos":"../immobilier/assets/images/immobilier/terrain4.jpg"
+        },
+        {
+            "titre":"Terrain avec cabane",
+            "ville":"Lugos",
+            "prix":150000,
+            "photos":"../immobilier/assets/images/immobilier/terrain5.jpg"
+        },
+        {
+            "titre":"Terrain avec muret",
+            "ville":"Sèvremont",
+            "prix":135000,
+            "photos":"../immobilier/assets/images/immobilier/terrain6.jpg"
+        }
+    ]
+}

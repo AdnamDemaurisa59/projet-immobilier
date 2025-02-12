@@ -6,6 +6,7 @@
     <title>Projet Immobilier</title>
     <link rel="stylesheet" href="./page-accueil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./page-accueil.js" defer></script>
 </head>
 <body>
 
@@ -41,7 +42,7 @@
             </div>
             <div class="header-center">
                 <div class="detail-pourcentage">
-                    <a href="">DES HONORAIRES REDUITS</a>
+                    <a href="#">DES HONORAIRES REDUITS</a>
                     <p> <span>1</span> <span>%</span> <span>,2</span>
                         <span>du prix de la vente*</span> <span>SEULEMENT</span></p>
                     <p class="detail-honoraires">* Taux de 1,2% TTC pour un prix de vente supérieur ou égal à 159 999€.</p>
@@ -49,25 +50,30 @@
                     <button class="btn-savoir">EN SAVOIR PLUS</button>
                 </div>
                 <div class="img-house-hand">
-                    <img src="../immobilier/assets/images/header/headerhouse.png" alt="">
+                    <img src="../immobilier/assets/images/header/headerhouse.png" alt="Photo d'une maison">
                 </div>
             </div>
             <div class="header-bottom">
-                <div>
+                <div class="header-nav">
                     <a href="#first-section">QUI SOMMES NOUS ?</a>
                 </div>
-                <div>
+                <div class="header-nav">
                     <a href="#service-online">NOS SERVICES</a>
                 </div>
-                <div>
+                <div class="header-nav">
                     <a href="#searchyou-section">RECHERCHER UN BIEN</a>
                 </div>
-                <div>
+                <div class="header-nav">
                     <a href="#latest-posted-proporties">NOS DERNIERES OFFRES</a>
                 </div>
-                <div>
+                <div class="header-nav">
                     <a href="#contact-group">NOUS CONTACTER</a>
                 </div>
+                    <!-- <a href="#first-section">QUI SOMMES NOUS ?</a>
+                    <a href="#service-online">NOS SERVICES</a>
+                    <a href="#searchyou-section">RECHERCHER UN BIEN</a>
+                    <a href="#latest-posted-proporties">NOS DERNIERES OFFRES</a>
+                    <a href="#contact-group">NOUS CONTACTER</a> -->
             </div>
         </section>
     </header>
@@ -199,11 +205,11 @@
                 <div class="searchyou-group">
                     <div class="bien" id="">
                         <label for="bien">TYPE DE BIEN</label>
-                        <select name="" id="bien">
+                        <select name="" id="bienImmobilier">
                             <option value="">Tout type</option>
-                            <option value="">Appartement</option>
-                            <option value="">Maison</option>
-                            <option value="">Terrain</option>
+                            <option value="appartement">Appartement</option>
+                            <option value="maison">Maison</option>
+                            <option value="terrain">Terrain</option>
                         </select>
                     </div>
                     <div class="localisation" id="">
@@ -221,7 +227,7 @@
                     </div>
                 </div>
                 <div class="searchyou-btn">
-                    <button>LANCER LA RECHECHE</button>
+                    <button submit="" id="rechercher" onclick="">LANCER LA RECHECHE</button>
                 </div>
                 
             </div>
@@ -247,28 +253,46 @@
                 </div> 
                 <!-- Conteneur d'images de biens -->
             <div class="position-image-container">
-                    <div class="image-container">
-                        <!--  Image Appartement-->
-                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart1.jpg" alt="Appartement"></div>
+                    <div class="image-container" id="infoVille">
+                         <!-- Image Appartement-->
+                          <img src="" id="imageApp1"  alt="">
+                          <img src="" id="imageApp2" alt="">
+                          <img src="" id="imageApp3" alt="">
+                          <img src="" id="imageApp4" alt="">
+                          <img src="" id="imageApp5" alt="">
+                          <img src="" id="imageApp6" alt="">
+                    <!-- <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart1.jpg" alt="Appartement"></div>
                     <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart2.jpg" alt="Appartement"></div>
                     <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart3.jpg" alt="Appartement"></div>
                     <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart4.jpg" alt="Appartement"></div>
                     <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart5.jpg" alt="Appartement"></div>
-                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart6.jpg" alt="Appartement"></div>
+                    <div class="image appart"><img src="../immobilier/assets/images/immobilier/appart6.jpg" alt="Appartement"></div> -->
                         <!--  Image Maison-->
-                    <div class="image house"><img src="../immobilier/assets/images/immobilier/house42.webp" alt="Maison"></div>
+                        <img src="" id="imagehouse42"  alt="">
+                        <img src="" id="imageHouseAlone" alt="">
+                        <img src="" id="imageHouseDark" alt="">
+                        <img src="" id="imageHouseHobbit" alt="">
+                        <img src="" id="imageHouseLuxe" alt="">
+                        <img src="" id="imageHouseTardis" alt="">
+                    <!-- <div class="image house"><img src="../immobilier/assets/images/immobilier/house42.webp" alt="Maison"></div>
                     <div class="image house"><img src="../immobilier/assets/images/immobilier/houseAlone.jpg" alt="Maison"></div>
                     <div class="image house"><img src="../immobilier/assets/images/immobilier/houseDark.jpg" alt="Maison"></div>
                     <div class="image house"><img src="../immobilier/assets/images/immobilier/houseHobbit.jpg" alt="Maison"></div>
                     <div class="image house"><img src="../immobilier/assets/images/immobilier/houseLuxe.jpg" alt="Maison"></div>
-                    <div class="image house"><img src="../immobilier/assets/images/immobilier/houseTardis.jpg" alt="Maison"></div>
+                    <div class="image house"><img src="../immobilier/assets/images/immobilier/houseTardis.jpg" alt="Maison"></div> -->
                         <!--  Image Terrain-->
-                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain1.jpg" alt="Terrain"></div>
+                        <img src="" id="imageTerrain1"  alt="">
+                        <img src="" id="imageTerrain2" alt="">
+                        <img src="" id="imageTerrain3" alt="">
+                        <img src="" id="imageTerrain4" alt="">
+                        <img src="" id="imageTerrain5" alt="">
+                        <img src="" id="imageTerrain6" alt="">
+                    <!-- <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain1.jpg" alt="Terrain"></div>
                     <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain2.jpg" alt="Terrain"></div>
                     <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain3.jpg" alt="Terrain"></div>
                     <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain4.jpg" alt="Terrain"></div>
                     <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain5.jpg" alt="Terrain"></div>
-                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain6.jpg" alt="Terrain"></div>
+                    <div class="image terrain"><img src="../immobilier/assets/images/immobilier/terrain6.jpg" alt="Terrain"></div> -->
                     <!-- Ajoute ici d'autres images pour chaque type... -->
                 </div>
             </div>
